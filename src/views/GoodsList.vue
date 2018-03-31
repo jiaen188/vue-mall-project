@@ -3,14 +3,9 @@
 
         <nav-header></nav-header>
 
-        <div class="nav-breadcrumb-wrap">
-            <div class="container">
-                <nav class="nav-breadcrumb">
-                    <a href="/">Home</a>
-                    <span>Goods</span>
-                </nav>
-            </div>
-        </div>
+        <nav-bread>
+            <span>Goods</span>
+        </nav-bread>
 
         <div class="accessory-result-page accessory-page">
             <div class="container">
@@ -110,6 +105,7 @@
 <script>
 import NavHeader from './../components/NavHeader';
 import NavFooter from './../components/NavFooter';
+import NavBread from './../components/NavBread';
 
 export default {
     name: 'goodList',
@@ -120,7 +116,8 @@ export default {
     },
     components: {
         NavHeader,
-        NavFooter
+        NavFooter,
+        NavBread
     }
 }
 </script>
